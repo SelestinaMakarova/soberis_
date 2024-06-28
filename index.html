@@ -10,10 +10,9 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="./images/index/about.png" />
-    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
 
-    <script src="./script.js"></script>
   </head>
   <body>
     <div class="menu">
@@ -262,10 +261,10 @@
     <button class="menu-btn">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISja5F0StGDbaZrL9yHJxmesXGlm_rG93Bg&s" alt="">
     </button>
-    <div id="footer-container"></div>
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        fetch("/templates/cube.html")
+        fetch("./templates/cube.html")
           .then((response) => response.text())
           .then((templateHtml) => {
             document.body.insertAdjacentHTML("beforeend", templateHtml);
