@@ -254,17 +254,17 @@
       <object
         
         type="image/svg+xml"
-        data="../images/index/navigation.svg"
+        data="/images/index/navigation.svg"
       ></object>
     </div>
 
     <button class="menu-btn">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISja5F0StGDbaZrL9yHJxmesXGlm_rG93Bg&s" alt="">
     </button>
-
+    <div id="footer-container"></div>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        fetch("./templates/cube.html")
+        fetch("/templates/cube.html")
           .then((response) => response.text())
           .then((templateHtml) => {
             document.body.insertAdjacentHTML("beforeend", templateHtml);
@@ -286,6 +286,8 @@
         }
       })      
     </script>
+    <script src="./script.js"></script>
+
     <script src="./scripts/eyes.js"></script>
     <script src="./scripts/puzzle.js">  </script>
   </body>
